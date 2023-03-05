@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void getCounting(int n){
+
+if(n<=0)
+return;
+
+getCounting(n-1);
+
+cout<<n<<endl;
+}
+
+int main()
+{
+    int n;
+    cout<<"Please Enter the Input"<<endl;
+    cin>>n;
+    
+    cout<<"Counting:"<<endl;
+    getCounting(n); 
+
+    
+}
